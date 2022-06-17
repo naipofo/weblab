@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="A small website for my experiments with web technologies!">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono">
+  <title>
+    <%= current_page.data.title || "Middleman" %>
+  </title>
+  <%= stylesheet_link_tag "site" %>
+  <%= javascript_include_tag "site" %>
+</head>
+
+<body>
+  <nav>
+    <span>
+      <%= image_tag './res/xmlicon.svg' %>
+      <span><%= I18n.transliterate(current_page.data.title, replacement: "").delete(" ").downcase || "experiment" %>.html</span>
+    </span>
+    <a href="https://naipofo.com"><%= image_tag './res/xmlicon.svg' %><span>naipofo.com</span></a>
+    <a href="https://github.com/NaiPofo"><%= image_tag './res/xmlicon.svg' %><span>git:naipofo</span></a>
+  </nav>
+  <main><%= yield %></main>
+  <footer>
+    <a href="https://github.com/naipofo/weblab"><%= image_tag './res/giticon.svg', :alt => "git" %>main@weblab</a>
+  </footer>
+</body>
+
+</html>
