@@ -1,0 +1,122 @@
++++
+title = "Animated SVG Drawing"
+description = "SVG animations are a really cool technology. It works without javascript enabled and can be embeeded in a regular img tag."
++++
+
+<h1>Animated SVG</h1>
+<article class="text"><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL">SVG
+        animations</a> are truely amazing. They work without javascript, are scalable and can be embedded almost
+    everywhere. Despite that, they aren't really used much, most developers favour <a
+        href="https://airbnb.design/lottie/">lottie</a> - it's multiplatform and has better tooling available.</article>
+<article class="text">While there is a lot of possibilities with SVG animation, it isn't perfect. It's usually more cpu intensive
+    than dedicated animation frameworks and there aren't really any editors available - your only choice is to write the
+    XML yourself.</article>
+<article class="text">One major advantage of svg animation is it's size. It does not require any extra baggage to
+    display in a browser and is just a regular text file, so it gets nicely compressed and does not impact the load time of
+    your webpage. SVG animation is also widely supported, with all major browsers supporting it since 2012. Internet
+    explorer, of course, does not support it, but I don't think we need to worry about it for <a
+        href="https://docs.microsoft.com/en-us/lifecycle/announcements/internet-explorer-11-end-of-support-windows-10">much
+        longer</a>.
+</article>
+<article class="image">
+    <figure>
+        <svg width="506" height="304" viewBox="0 0 253 152" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <path id="letters-path"
+                    d="M109.2 56.8 102.5 56.8 102.5 34.3C104.309 34.083 105.281 33.499 105.793 32.662A3.36 3.36 0 00106.2 31.6L97.1 30.6 97.1 56.8 76.6 56.8 76.6 33.7A8.054 8.054 0 0077.743 33.486C79.36 33.048 79.951 32.177 80.2 31.1L71.3 30 71.3 56.8 51.3 56.8 51.3 35.6A8.994 8.994 0 0052.463 35.349C53.404 35.073 54.001 34.675 54.374 34.176A2.926 2.926 0 0054.9 32.8L46 31.7 46 56.8 30 56.8 30.8 59.7 46 59.7 46 120.7 47.1 120.7C48.891 120.7 50.843 119.497 51.231 118.671A.646.646 0 0051.3 118.4L51.3 112.5 116.2 112.5C117.089 112.5 117.817 112.298 118.306 111.87A1.934 1.934 0 00118.9 110.9C115.827 108.098 111.12 104.398 110.243 103.712A75.284 75.284 0 00110.1 103.6L105.4 109.5 51.3 109.5 51.3 59.7 71.3 59.7 71.3 96.5 72.3 96.5A5.632 5.632 0 0073 96.455C74.681 96.243 76.362 95.339 76.577 94.644A.488.488 0 0076.6 94.5L76.6 88.1 97.1 88.1 97.1 94.7 98.2 94.7A5.694 5.694 0 0098.474 94.693C100.487 94.596 102.5 93.461 102.5 92.6L102.5 59.7 119.6 59.7A5.127 5.127 0 00120.434 59.639C121.326 59.492 121.866 59.059 122.1 58.2 119 55.2 113.8 51.1 113.8 51.1L109.2 56.8ZM202.3 70.6 202.3 75 203.1 75C204.795 75 207.199 73.759 207.558 73.113A.358.358 0 00207.6 73L207.6 39.2A12.744 12.744 0 00209.39 38.727C210.354 38.392 211.13 37.973 211.651 37.538A3.15 3.15 0 00212 37.2L204.6 31.6 201.3 35.2 150.6 35.2 144.6 32.2 144.6 75.6 145.6 75.6C147.9 75.6 150.1 74.3 150.1 73.8L150.1 70.6 163.7 70.6A61.87 61.87 0 01149.587 84.137C143.95 88.125 137.45 91.55 130.3 94.3L131.2 96.1A98.498 98.498 0 00147.72 89.655 73.286 73.286 0 00159.9 82L159.9 92.2C159.9 101.204 156.549 110.364 141.385 116.791A68.645 68.645 0 01134.7 119.2L135.7 120.8A75.516 75.516 0 00145.178 117.889C159.314 112.421 163.856 104.448 164.988 96.475A33.387 33.387 0 00165.3 92.4L165.3 84.6A6.864 6.864 0 00166.339 84.389C167.22 84.131 167.758 83.724 168.084 83.227A2.88 2.88 0 00168.5 82.1L160.9 81.2C164.8 78 168.2 74.5 171 70.6L182.2 70.6A45.346 45.346 0 00189.923 79.333 52.881 52.881 0 00193.2 82L186.4 81.3 186.4 120.6 187.4 120.6C189.275 120.6 191.502 119.545 191.773 118.754A.476.476 0 00191.8 118.6L191.8 84.6A7.061 7.061 0 00192.757 84.41C193.694 84.149 194.294 83.713 194.6 83.1 201.3 87.9 209.2 91.7 217.1 94.3A8.131 8.131 0 01218.297 91.86 5.973 5.973 0 01221.9 89.5L222 88.5C208.4 85.6 193.1 79.3 185 70.6L202.3 70.6ZM97.1 85.2 76.6 85.2 76.6 59.7 97.1 59.7 97.1 85.2ZM178.5 67.6 178.5 54 202.3 54 202.3 67.6 178.5 67.6ZM202.3 38.1 202.3 51.1 178.5 51.1 178.5 38.1 202.3 38.1ZM150.1 54 173.1 54 173.1 67.6 150.1 67.6 150.1 54ZM173.1 38.1 173.1 51.1 150.1 51.1 150.1 38.1 173.1 38.1Z" />
+            </defs>
+            <mask id="letters">
+                <use fill="#ffffff" href="#letters-path" />
+            </mask>
+            <g fill="transparent" stroke="#F8F8F2" stroke-width="9" stroke-linecap="round" stroke-linejoin="bevel" mask="url(#letters)">
+                <!-- 世 -->
+                <path stroke-dashoffset="0" stroke-dasharray="105" d="M29 58Q76 62 120 58L114 53 110 57" >
+                    <animate attributeName="stroke-dashoffset" values="105;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="68" d="M78 32Q71 29 75 34 76 64 75 94">
+                    <animate attributeName="stroke-dashoffset" values="68;68;68;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="67" d="M104 33Q96 30 101 35 102 64 101 92">
+                    <animate attributeName="stroke-dashoffset" values="67;67;67;67;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="51" d="M75 86Q88 88 100 86">
+                    <animate attributeName="stroke-dashoffset" values="51;51;51;51;51;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="180"
+                    d="M53 34Q45 33 49 36C46 66 53 92 49 118Q46 109 58 112 90 112 115 111 110 103 108 109">
+                    <animate attributeName="stroke-dashoffset" values="180;180;180;180;180;180;90;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <!-- 界 -->
+                <path stroke-dashoffset="0" stroke-dasharray="42"
+                    d="M146 34Q146 57 148 75">
+                    <animate attributeName="stroke-dashoffset" values="42;42;42;42;42;42;42;42;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="107"
+                    d="M149 36Q176 37 205 35 207 32 210 36L207 36Q208 54 204 74">
+                    <animate attributeName="stroke-dashoffset" values="107;107;107;107;107;107;107;107;107;53;0;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="34"
+                    d="M177 39Q174 39 176 40L176 71">
+                    <animate attributeName="stroke-dashoffset" values="34;34;34;34;34;34;34;34;34;34;34;0;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="55"
+                    d="M150 53Q176 52 204 53">
+                    <animate attributeName="stroke-dashoffset" values="55;55;55;55;55;55;55;55;55;55;55;55;0;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="57"
+                    d="M149 69Q147 71 153 69L204 69">
+                    <animate attributeName="stroke-dashoffset" values="57;57;57;57;57;57;57;57;57;57;57;57;57;0;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="45"
+                    d="M167 70Q157 86 131 95">
+                    <animate attributeName="stroke-dashoffset" values="45;45;45;45;45;45;45;45;45;45;45;45;45;45;0;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="43"
+                    d="M183 70Q199 87 219 91">
+                    <animate attributeName="stroke-dashoffset" values="43;43;43;43;43;43;43;43;43;43;43;43;43;43;43;0;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="59"
+                    d="M167 83Q158 81 163 85 164 113 135 120">
+                    <animate attributeName="stroke-dashoffset" values="59;59;59;59;59;59;59;59;59;59;59;59;59;59;59;59;0;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <path stroke-dashoffset="0" stroke-dasharray="46"
+                    d="M194 84Q184 80 189 85 191 103 188 120">
+                    <animate attributeName="stroke-dashoffset" values="46;46;46;46;46;46;46;46;46;46;46;46;46;46;46;46;46;0;0;0;0;0;0;0" dur="8s" repeatCount="indefinite" />
+                </path>
+                <animate attributeName="opacity" values="1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;1;.8;.6;.4;.2;0;0" dur="8s" repeatCount="indefinite" />
+            </g>
+            <use href="#letters-path" fill="#ff0000">
+                <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;.2;.3;.3;.3;.3;0" dur="8s" repeatCount="indefinite" />
+                <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    from="0"
+                    to="30"
+                    dur="8s"
+                    begin="6s"
+                    repeatCount="indefinite"/>
+            </use>
+            <use href="#letters-path" fill="#0000ff">
+                <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;.2;.3;.3;.3;.3;0" dur="8s" repeatCount="indefinite" />
+                <animateTransform attributeName="transform"
+                    attributeType="XML"
+                    type="translate"
+                    from="0"
+                    to="-30"
+                    dur="8s"
+                    begin="6s"
+                    repeatCount="indefinite"/>
+            </use>
+        </svg>
+        <figcaption>Simple animation I made by hand. Pure svg, without any css or js.</figcaption>
+    </figure>
+</article>
+<article class="text">Making this animation was quite a hassle. I had to manually draw a path, measure it using
+    <code>SVGGeometryElement.getTotalLength()</code> and type out the animation for it. This could be automated - the
+    <a href="https://kanjivg.tagaini.net/">KanjiVG project</a> is a database of stroke order for Japenese characters in the
+    form of svg paths, and you could easily make outlines for latin letters.
+</article>
+<article class="text">There is still the problem of strokes "bleeding" into each other. This could be solved by
+    putting each path into a mask of the finished stroke, but this would be hard to automate, as fonts have all their
+    strokes combined. Maybe some basic computer vision can help here!
+</article>

@@ -5,20 +5,27 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A small website for my experiments with web technologies!">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono">
-  <title>
-    <%= current_page.data.title || "Middleman" %>
-  </title>
+  <title><%= current_page.data.title || "Web experiment" %></title>
+  <%= tag :meta, :name => "description", :content => (current_page.data.description || "A mysterious web experiment!") %>
   <%= stylesheet_link_tag "site" %>
   <%= javascript_include_tag "site" %>
 </head>
 
-<body>
+<body style="background-color: #272822;">
   <nav>
+    <% if current_page.path != "index.html" %>
+      <% link_to '/index.html' do %><%= image_tag './res/xmlicon.svg' %><span>index.html</span><% end %>
+    <% end %>
     <span>
       <%= image_tag './res/xmlicon.svg' %>
-      <span><%= I18n.transliterate(current_page.data.title, replacement: "").delete(" ").downcase || "experiment" %>.html</span>
+      <span><%= 
+        if current_page.path != "index.html"
+          I18n.transliterate(current_page.data.title, replacement: "").delete(" ").downcase || "experiment"
+        else
+          "index"
+        end
+      %>.html</span>
     </span>
     <a href="https://naipofo.com"><%= image_tag './res/xmlicon.svg' %><span>naipofo.com</span></a>
     <a href="https://github.com/NaiPofo"><%= image_tag './res/xmlicon.svg' %><span>git:naipofo</span></a>
