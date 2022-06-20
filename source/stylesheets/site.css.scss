@@ -109,14 +109,17 @@ hr {
 }
 
 article,
-hr {
+hr,
+figure {
   margin-left: 32px;
   margin-top: 16px;
   margin-bottom: 16px;
+  margin-right: 0;
   max-width: 800px;
 }
 
-article {
+article,
+figure {
   font: 400 1rem "JetBrains Mono", monospace;
   padding: 16px;
   border: #36363a 1px solid;
@@ -155,14 +158,6 @@ article {
     }
   }
 
-  &.image {
-    overflow-y: scroll;
-
-    >figure {
-      margin: 0;
-    }
-  }
-
   a {
     background-color: #8585ff1e;
     color: #bbc5ff;
@@ -178,4 +173,13 @@ article {
     padding-right: 8px;
     border-radius: 4px;
   }
+}
+
+figure {
+  overflow-y: scroll;
+}
+
+img.pixelated-rendering {
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
 }
