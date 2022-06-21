@@ -1,0 +1,2 @@
+window.addEventListener("load", e=>document.querySelectorAll(".local-date").forEach(e =>
+    e.innerText = (new Date(e.innerHTML)).toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })))
