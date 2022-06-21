@@ -2,7 +2,7 @@
 title = "Web labs 🧪"
 description = "A small website for my experiments with web technologies!"
 +++
-
+<%= javascript_include_tag "dates" %>
 <h1><span>&lt;</span>web labs<span>/&gt;</span></h1>
 <article class="text">
   This is a simple site I will use for cool experiments with web technologies. Anything cool I find on the web
@@ -16,10 +16,13 @@ description = "A small website for my experiments with web technologies!"
 <h2>Experiments</h2>
 <% sitemap.resources
   .select { |resource| resource.path =~ /^experiments\// }
+  .sort_by {|obj| obj.data.date}
+  .reverse()
   .each do |resource|
 %>
   <% link_to resource.path do %><article class="link">
     <h3><%= resource.data.title %></h3>
-    <%= resource.data.description || "" %>
+    <div class="date local-date"><%= DateTime.parse(resource.data.date) %></div>
+    <p><%= resource.data.description || "" %></p>
   </article><% end %>
 <% end %>
