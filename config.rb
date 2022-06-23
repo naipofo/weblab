@@ -1,6 +1,8 @@
 activate :relative_assets
 set :relative_links, true
 
+activate :asset_hash
+
 configure :build do
   activate :minify_css
 end
