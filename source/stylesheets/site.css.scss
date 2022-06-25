@@ -134,7 +134,7 @@ figure {
       margin-bottom: 4px;
     }
 
-    .date{
+    .date {
       opacity: .7;
       font-size: .9rem;
     }
@@ -191,7 +191,10 @@ figure {
   overflow-y: scroll;
 }
 
-img.pixelated-rendering {
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
+img,
+svg {
+  .pixelated-rendering {
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+  }
 }
